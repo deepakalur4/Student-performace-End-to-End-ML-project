@@ -6,6 +6,7 @@ import numpy as np
 import sys
 import os
 from sklearn.model_selection import train_test_split
+from data_transformation import * 
 
 
 @dataclass
@@ -46,7 +47,9 @@ class data_ingestion:
 if __name__=="__main__":
     obj=data_ingestion()
     traindf,testdf=obj.initiate_dataingestion()
-    print(traindf,testdf)
+    obj2=data_transformation()
+    obj2.initiaate_data_transformation(traindf,testdf)
+    # print(traindf,testdf)
 
 
 
