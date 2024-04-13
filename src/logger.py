@@ -1,7 +1,7 @@
 import logging
 import os
 from datetime import datetime
-from exception import CustomException
+from src.exception import CustomException
 import sys
 
 
@@ -17,12 +17,5 @@ logging.basicConfig(
     level=logging.INFO
 
 )
-
-if __name__=="__main__":
-    try:
-        a=1/0
-    except Exception as e:
-        logging.info("Logging has started")
-        raise CustomException(e,sys)
 
 
