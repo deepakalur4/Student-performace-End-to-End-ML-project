@@ -1,4 +1,0 @@
-INFO:root:Entered the method of data ingestion block
-INFO:root:Loaded the csv file as a dataframe
-INFO:root:Starting a train and test split
-INFO:root:Train_test split done
