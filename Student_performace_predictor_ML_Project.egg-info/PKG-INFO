@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Student_performace_predictor_ML_Project
+Version: 0.0.0.0
+Author: Deepak S Alur
+Author-email: Deepakalur4@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: setuptools

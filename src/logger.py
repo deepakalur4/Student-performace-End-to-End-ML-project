@@ -12,6 +12,3 @@ log_path=os.path.join(make_log_dir,log_file_path)
 
 logging.basicConfig(filename=log_path,level=logging.INFO)
 
-
-if __name__=="__main__":
-    logging.info("Logging started")

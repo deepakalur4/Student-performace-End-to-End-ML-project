@@ -1,0 +1,3 @@
+INFO:root:data ingestion part stared
+INFO:root:read the csv data set as dataframe
+INFO:root:Starting a train and test split
