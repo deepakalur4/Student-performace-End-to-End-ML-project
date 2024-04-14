@@ -49,6 +49,7 @@ class data_transformation:
             train_df=pd.read_csv(train_ph)
             test_df=pd.read_csv(test_ph)
 
+
             prprocsser_obj=self.get_transformation_object()
 
             target_column_name="math_score"
@@ -61,10 +62,13 @@ class data_transformation:
 
             input_feature_train_df_pre=prprocsser_obj.fit_transform(input_feature_train_df)
             input_feature_test_df_pre=prprocsser_obj.transform(input_feature_test_df)
+
+            
             
 
             input_feature_train_df_arr=np.c_[input_feature_train_df_pre,np.array(target_feature_train_df)]
-            input_feature_test_df_arr=np.c_[input_feature_test_df_pre,np.array(input_feature_test_df_pre)]
+            input_feature_test_df_arr=np.c_[input_feature_test_df_pre,np.array(target_feature_test_df)]
+
 
             save_object(self.data_transformation.pickle_file_path,prprocsser_obj)
 

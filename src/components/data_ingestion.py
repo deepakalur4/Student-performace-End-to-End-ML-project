@@ -7,7 +7,7 @@ import sys
 import os
 from sklearn.model_selection import train_test_split
 from data_transformation import * 
-
+from model_trainer import *
 
 @dataclass
 class dataingestionconfig:
@@ -48,8 +48,10 @@ if __name__=="__main__":
     obj=data_ingestion()
     traindf,testdf=obj.initiate_dataingestion()
     obj2=data_transformation()
-    obj2.initiaate_data_transformation(traindf,testdf)
-    # print(traindf,testdf)
+    a,b,_=obj2.initiaate_data_transformation(traindf,testdf)
+    obj3=model_trainer()
+    obj3.initiate_model_training(a,b)
+    
 
 
 
