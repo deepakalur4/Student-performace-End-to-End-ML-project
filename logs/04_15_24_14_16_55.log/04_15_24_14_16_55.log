@@ -1,0 +1,205 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.158.163:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\app.py", line 8, in index
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\templates\index.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\werkzeug\routing\map.py", line 926, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_pipeline' instead?
+INFO:werkzeug:192.168.158.163 - - [15/Apr/2024 14:17:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\app.py", line 8, in index
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\templates\index.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\werkzeug\routing\map.py", line 926, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_pipeline' instead?
+INFO:werkzeug:192.168.158.163 - - [15/Apr/2024 14:17:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\app.py", line 8, in index
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\templates\index.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\werkzeug\routing\map.py", line 926, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_pipeline' instead?
+INFO:werkzeug:192.168.158.163 - - [15/Apr/2024 14:17:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\app.py", line 8, in index
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\templates\index.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\werkzeug\routing\map.py", line 926, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_pipeline' instead?
+INFO:werkzeug:192.168.158.163 - - [15/Apr/2024 14:17:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\app.py", line 8, in index
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\templates\index.html", line 6, in top-level template code
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Preparation_2024\Syallabus\ML\ML project practice\venv\Lib\site-packages\werkzeug\routing\map.py", line 926, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'predict_datapoint'. Did you mean 'predict_pipeline' instead?
+INFO:werkzeug:192.168.158.163 - - [15/Apr/2024 14:17:10] "[35m[1mGET / HTTP/1.1[0m" 500 -

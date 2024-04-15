@@ -1,0 +1,12 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 765-954-102
+INFO:root:Before loading
+INFO:root:after loading
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2024 14:37:21] "POST /predict HTTP/1.1" 200 -
+INFO:root:Before loading
+INFO:root:after loading
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2024 14:38:05] "POST /predict HTTP/1.1" 200 -
+INFO:root:Before loading
+INFO:root:after loading
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2024 14:38:09] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'E:\\Preparation_2024\\Syallabus\\ML\\ML project practice\\app.py', reloading

@@ -1,0 +1,6 @@
+INFO:root:data ingestion part stared
+INFO:root:read the csv data set as dataframe
+INFO:root:Starting a train and test split
+INFO:root:Initaiting data transformation
+INFO:root:Getting into get_transformation_object
+INFO:root:Model_training_started
